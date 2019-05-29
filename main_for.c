@@ -3,14 +3,15 @@
 #include <stdbool.h>
 #include <math.h>
 
-double summ(), summ2();
+float summ(), summ2();
 int findFirstElement(),findFirstNegativeElement();
 void print();
 int n,k;
+float sum;
 double eps;
 bool exist=1;
 
-void main()
+int main()
 {
 while(exist){
  printf("Tasks:\n");
@@ -25,12 +26,12 @@ switch (_getch()) {
 case '1':
     printf("Type n\n");
     scanf("%i", &n);
-    printf("%lf\n", summ(n));
+    printf("sum = %f\n", summ(n));
   break;
 case '2':
     printf("Type eps\n");
-    scanf("%lf", &eps);
-    printf("%lf\n", summ2(eps));
+    scanf("%f", &eps);
+    printf("%f\n", summ2(eps));
 break;
 case '3':
     printf("Type n\n");
@@ -41,13 +42,13 @@ case '3':
 break;
 case '4':
     printf("Type eps\n");
-    scanf("%lf", &eps);
+    scanf("%f", &eps);
     printf("%i\n", findFirstElement(eps));
 break;
 case '5':
     printf("Type eps\n");
-    scanf("%lf", &eps);
-    printf("%i\n", findNegativeFirstElement(eps));
+    scanf("%f", &eps);
+    printf("%i\n", findFirstNegativeElement(eps));
 break;
 case '6':
    exist = 0;
@@ -56,6 +57,7 @@ default:
 printf("Incorrect input");
 exist = 0;
 break;
+return 0;
 }
 }
 }
