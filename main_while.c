@@ -42,12 +42,12 @@ case '3':
 break;
 case '4':
     printf("Type eps\n");
-    scanf("%f", &eps);
+    scanf("%lf", &eps);
     printf("%i\n", findFirstElement(eps));
 break;
 case '5':
     printf("Type eps\n");
-    scanf("%f", &eps);
+    scanf("%lf", &eps);
     printf("%i\n", findFirstNegativeElement(eps));
 break;
 case '6':
