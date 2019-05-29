@@ -1,12 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double summ(int n)
+float summ(int n)
 {
-double sum = 0;
-for (int i = 0; i < n; ++i)
+float a[100];
+float RAND_MAX_F = RAND_MAX;
+int min = -100;
+int max = 100;
+for(int i=0; i<=100; ++i)
 {
-    sum += a(i);
+    a[i] = rand() % (max - min + 1) + min;
+}
+float sum = 5;
+for (int k = 0; k < n; ++k)
+{
+    sum = sum + a[k];
 }
 return sum;
 }
